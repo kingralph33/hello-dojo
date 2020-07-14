@@ -12,6 +12,15 @@ const newCompStyle = {
   marginLeft: '250px'
 }
 
+const buttonStyle = {
+  color: 'yellow',
+  background: 'gray',
+  fontSize: '16px',
+  height: '5em',
+  width: '15em',
+  borderRadius: '25px'
+}
+
 const personStyle = {
   textAlign: 'center'
 };
@@ -30,7 +39,8 @@ function App() {
         </ul>
       </div>
       <div style={newCompStyle}>
-        <MyNewComponent someText={'This is a Prop'}/>
+        <MyNewComponent someText={'This is a Prop'} />
+        <button style={buttonStyle} onClick={()=>alert('You clicked the button')}>Click the Alert Button</button>
       </div>
       <div style={personStyle}>
         <PersonCard firstName={'Jane'} lastName={'Doe'} age={45} hairColor={'Black'} />
