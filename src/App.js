@@ -22,7 +22,9 @@ const buttonStyle = {
 }
 
 const personStyle = {
-  textAlign: 'center'
+  textAlign: 'center',
+  padding: '20px',
+  margin: '25px'
 };
 
 function App() {
